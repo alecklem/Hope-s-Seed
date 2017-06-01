@@ -4,10 +4,18 @@
 <meta charset="UTF-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width = device-width, initial-scale = 1">
-<title>About Hope's Seed</title>
+<title>Hope's Seed</title>
 <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
 <link href="https://fonts.googleapis.com/css?family=Abel|Kanit|Lobster" rel="stylesheet">
+<script>src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"> </script>
+<script>
+$(document).ready(function()){
+
+});
+</script>
+
 <style>
+
 .navbar-brand{
 	font-size: 50px;
 	color:white;
@@ -23,14 +31,20 @@ a{
 
 p{
 	font-family: 'Kanit';
-}
-
-.carousel-inner > .item > img {
-    margin: 0 auto;
+  font-size: 20px;
 }
 
 #navbar{
   padding-top:20px;
+}
+
+#alone{
+	background-image: url(/Users/adk6332/Desktop/Bootstrap/images/alone.jpg);
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  min-height: 500px;
 }
 
 .navbar-header{
@@ -44,7 +58,7 @@ p{
 }
 
 #box-wrapper{
-  background-image: url(imagethree.png);
+  background-image: url(/Users/adk6332/Desktop/Bootstrap/images/imagethree.png);
   background-size: cover;
   background-attachment: fixed;
   background-position: center;
@@ -64,14 +78,31 @@ padding:0px;
   color: white;
   font-family:'Abel';
 }
+
+.bottomimage{
+	font-size: 60px;
+	position: absolute;
+	z-index: 1;
+	top:175px;
+	left: 185px;
+	color: black;
+	font-family:'Abel';
+}
+
+#model{
+  margin: 10px;
+  width: 500px;
+  height: 500px;
+}
+
 </style>
 </head>
 <body>
 
 <div id="navigation">
-<nav class="navbar navbar-inverted navbar-custom navbar-fixed-top" style= "background-color:#A8FF80 ;">
+<nav class="navbar navbar-transparent navbar-custom navbar-fixed-top" style="background-color:#54E10D;">
   <div class="container-fluid">
-  <a href="#" class="navbar-left"><img src="logo.png" style="height:100%; width: 125px;" id="logo"></a>
+  <a href="#" class="navbar-left"><img src="/Users/adk6332/Desktop/Bootstrap/images/logo.png" style="height:94px; width: 115px;" id="logo"></a>
     <div class="navbar-header">
       <a class="navbar-brand "href="#">Hope's Seed</a>
       <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
@@ -82,12 +113,14 @@ padding:0px;
     	</div>
       <div class="collapse navbar-collapse" id="navbar">
         <ul class="nav navbar-nav navbar-right text-uppercase">
-          <li class="active"><a href="hopesseed-homepage.html">Home</a></li>
+          <li class="active"><a href="hopesseed-homepage.">Home</a></li>
           <li><a href="about.html">About</a></li>
    	      <li><a href="contact.html">Contact</a></li>
    		    <li><a href="donate.html">Donate</a></li>
           <li><a href="sponsors.html">Sponsors</a></li>
-          <li><a href="more.html">More</a></li>
+          <li><a href="stories.html">Stories</a></li>
+					<li><a href="events.html">Events</a></li>
+					<li><a href="photos.html">Photos</a></li>
       </ul>
     </div>
   </nav>
@@ -96,23 +129,70 @@ padding:0px;
   <br>
   <br>
   <br>
-  <br> 
-  <br>
-  <br>
-<div class="container">
-	<p> Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-	tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-	quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-	consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-	cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-	proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+<div class="jumbotron" id="box-wrapper">
+  <div class="container">
+    <div class="row">
+     <div class="col-lg-12"></div>
+        <div class="text-uppercase middleimage">
+          <h1>You're Not Alone</h1>
+        </div>
+    </div>
+  </div>
 </div>
+
 <div class="container">
-	<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-	tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-	quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-	</p>
+  <div class="row">
+    <div class="col-md-4">
+      <h1>Life is grand </h1>
+    </div>
+    <div class="col-md-4">
+      <h1>Dr. Delphinium</h1>
+    </div>
+
+    <div class="col-md-4">
+      <h1> California Pizza Kitchen </h1>
+    </div>
+
+  </div>
+</div>
+
+<div class="container">
+  <div class="row">
+    <div class="col-md-4">
+      <img class="img-responsive" src="/Users/adk6332/Desktop/Bootstrap/images/sponsor2.png" />
+    </div>
+    <div class="col-md-4">
+      <img class="img-responsive" src="/Users/adk6332/Desktop/Bootstrap/images/sponsor1.jpg" />
+    </div>
+
+    <div class="col-md-4">
+      <img class="img-responsive" src="/Users/adk6332/Desktop/Bootstrap/images/sponsor3.png" />
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-md-4">
+      <p>
+        Life is Grand founder Lauren Wulz's husband used to write affirmations on her bathroom mirror. She could not take them with her. So, drawing on the Power of Affirmations, Power PennyTM designs are inspirations and affirmations of what you want more of
+        in your life, or what you want more of out in the world. Each is made with love and handcrafted (by us and now women from Genesis Women's Shelter) using copper for its known healing properties, natural crystals and gemstones. A portion of our
+        proceeds is given to organizations we believe are helping make Life Grand for others. The GRAND STAND is this: GRATITUDE REINFORCES AND NURTURES DREAMS!
+      </p>
+    </div>
+
+    <div class="col-md-4">
+      <p>
+        Dr Delphinium Designs and Events has proudly served the Dallas Metroplex for over 20 years. We are committed to offering only the finest floral arrangements and gifts, which are backed by our prompt and friendly service. Because all of our customers
+				are important, our professional staff is dedicated in making your floral experience a pleasant one. At Dr Delphinium we will always go the extra mile to make your floral gift perfect.
+      </p>
+    </div>
+
+    <div class="col-md-4">
+      <p>
+				We opened our first restaurant In Beverly Hills in 1985. Former federal prosecutors Rick Rosenfield and Larry Flax combined their passion for food with fresh high-quality ingredients to create innovative, hearth-baked pizzas such as The Original BBQ Chicken, Thai Chicken, and Jamaican Jerk Chicken, cooked in an open kitchen. The restaurant gave California a place in the pizza pantheon alongside Chicago and New York. Our California twist on global flavors resonated with guests, and almost immediately, CPK became a bustling spot for business and family gatherings.
+      </p>
+    </div>
+
+  </div>
 </div>
 
 </body>
-</html>o
+</html>
